@@ -2,9 +2,9 @@
 
 language: python
 python:
+  - 3.10
+  - 3.9
   - 3.8
-  - 3.7
-  - 3.6
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
@@ -21,8 +21,8 @@ deploy:
   distributions: sdist bdist_wheel
   user: FranEnguix
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: KC6WB49gI3b90eTcWCx7Fr2QbKWr24yOajZgu0iZP9gcTcDjvl2f8K118Cuazatx7WJqTEVoSeo1snNtYHzhhbaqpkC1gJ6JT5JxxXvOBGPgyW77bKq8ZSupWVtgxTT967TfjH0LUgzrljSCnzwYR1B3eexS4RU/0PxF7f3ZX1OvoxyDFYJA0YOrHATm5R1CVPUGPR9p/2wi2cU8qcbOaw87Js/p9EI4WdFqwFQ1g2F1A/SmN1sevSw2If+rYZmHViLtKfcU+KyBALXBZwPmAnebEbfwkKj7oDuwnbrNd62QgS69WNAxqabeaDuZeFPuZ88pMTPtEhbcbha0dpUJKlsXHhYrnh+RiSfBCJ8UaJli1doHU/v4+0yqhhLXTAiKHyYqz59L5OcVXn2GoqEKPmPoN9yoofTMygsVjwZktj5rethYBVd8YpYRtViu928TOep2JGnTb1k1bXuy1bAQy8I7MhzVpMuHcAORYUwVNAoGrahkxqCFe4ZRJzK+LqlpCxjD3J7XnYo5/Fnq/n/Z2sOCXUXDemM1gjalTOBXcPL7agEhZ5UOg+ENh3YuZY45MU2lLjK1xI2BRPInBXGPXibGoxljX+wrCGyNmjAFWZ0gb3zBc4rkSeiYbghzgROMpRgqjI5PjccWBWt7XHoJ5ZSwsJ9C+q6smKICfSJ/mpc=
   on:
     tags: true
     repo: FranEnguix/royal_flush
-    python: 3.8
+    python: 3.10
